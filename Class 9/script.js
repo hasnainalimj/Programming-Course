@@ -37,20 +37,20 @@
 //   }
 
 
-function  varify(age){
-  if(age <= 10){
-    return "Not Allowed"
-  }
-  else if(age <= 50){
-    return "Allowed"
-  }
-  else if(age > 50){
-    return "Free user"
-  }
-  else{
-    return "Invalid input"
-  }
-}
+// function  varify(age){
+//   if(age <= 10){
+//     return "Not Allowed"
+//   }
+//   else if(age <= 50){
+//     return "Allowed"
+//   }
+//   else if(age > 50){
+//     return "Free user"
+//   }
+//   else{
+//     return "Invalid input"
+//   }
+// }
 
-var age = 10;
-age>=6 ? console.log("That's true") : console.log("That's false");
+// var age = 10;
+// age>=6 ? console.log("That's true") : console.log("That's false");
