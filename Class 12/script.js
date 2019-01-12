@@ -62,10 +62,16 @@ var messages = ["Hi","Hello","How are you?","Bye"];
 
 // console.log(result);
 
-var input = +prompt("Enter any number for checking is it even or odd");
+// var input = +prompt("Enter any number for checking is it even or odd");
 
-if(input%2 === 0){
-	console.log("Even");
-}else{
-	console.log("Odd")
-}
+// if(input%2 === 0){
+// 	console.log("Even");
+// }else{
+// 	console.log("Odd")
+// }
+
+//Storing array in local storage
+var names = ['Ali','Ahmed','Zia','Khan'];
+
+localStorage.setItem("names",JSON.stringify(names));
+console.log(JSON.parse(localStorage.getItem("names")));
