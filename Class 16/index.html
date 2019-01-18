@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title>
+        JS 16
+    </title>
+</head>
+<style>
+    .showSomeBorder{
+        border-radius: 100%;
+        transition: border-radius 2s;
+    }
+
+    .showWidth{
+        width : 500px !important;
+        transition: width 2s;
+    }
+</style>
+
+<body>
+    <!-- <input type="text" id="txtName" oninput="getName()">
+  <h1 id="myParagraph"></h1>
+
+  <input type="text" placeholder="sim code" id="txtCode" oninput="checkSim()">
+  <input type="text" id="txtSim" placeholder="Sim">
+  <h1 id="simname"></h1> -->
+
+    <h1 id="txt">My Name Is Khan...</h1>
+    <h1 id="fulltxt" style="display: none">My Name Is Khan and I'm not a Terrorist.</h1>
+    <button onclick="showMore()">Show More</button>
+    <button onclick="showLess()">Show Less</button>
+
+    <p id="slowLoris"> Slow lorises are a group of several species of strepsirrhine primates which make up the genus Nycticebus.
+        <a href="javascript:void(0);" onClick="expandLoris();"><em>Click for more.</em></a> </p>
+
+    <!-- onclick="setInvisible()" -->
+    <!-- <img src="1.png" style="width: 250px;" id="uglyImage" onmouseover="setInvisible()" onmouseout="setVisible()"/> -->
+
+    <img src="1.png" style="width: 250px;" id="uglyImage" onmouseover="addNewClass()" onclick="addWidth()"/>
+
+</body>
+<script src="script.js"></script>
+
+</html>
