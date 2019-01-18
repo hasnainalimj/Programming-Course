@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <title>
+        JS 15
+    </title>
+</head>
+<style>
+    .slider {
+        width: 0%;
+        height: 20px;
+        border-radius: 10px;
+        background-color: green;
+        transition: width 0.5s;
+    }
+
+    .range {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <div class="slider" id="myslider"></div>
+    <div class="range">
+        <span onclick="mySlider(0)">0</span>
+        <span onclick="mySlider(20)">20</span>
+        <span onclick="mySlider(40)">40</span>
+        <span onclick="mySlider(60)">60</span>
+        <span onclick="mySlider(80)">80</span>
+        <span onclick="mySlider(100)">100</span>
+    </div>
+
+    <input type="text" onmouseover="console.log('In')" onmouseout="console.log('Out')">
+
+    <input type="text" size="30" onFocus="this.style.backgroundColor='yellow';">
+
+    <input type="text" size="30" onFocus="this.style.backgroundColor='yellow';" onBlur="this.style.backgroundColor='white';">
+
+    <!-- <form onSubmit="checkAddress('txtEmail');"> 
+        Email: <input type="text" id="txtEmail"> 
+        <input type="submit" value="Submit"> 
+    </form> -->
+
+    <!-- Email: <input type="text" id="txtEmail"> 
+    <input type="submit" value="Submit" onclick="checkAddress('txtEmail')"> -->
+
+    <div id="abc">
+        Pakistan
+    </div>
+    <input type="text" id="txt" value="Hello">
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
