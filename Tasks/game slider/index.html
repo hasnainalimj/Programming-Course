@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Game Slider</title>
+</head>
+<style>
+   .wrapper{
+       width: 100%;
+       height: 200px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+   }
+
+   .childWrapper{
+       width: 100%;
+       height: auto;
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+       align-items: center;
+   }
+
+   .tagZero{
+       width: 80px;
+       height: 80px;
+       border-radius: 100%;
+       border: 1px solid red;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+
+   .tagHundred{
+       width: 80px;
+       height: 80px;
+       border-radius: 100%;
+       border: 1px solid red;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+
+   .sliderWrapper{
+       width: 90%;
+       height: 50px;
+       border: 1px solid blue;
+   }
+
+   .slider{
+       width: 0%;
+       height: inherit;
+       background: orange;
+       transition: width 1s;
+   }
+   
+   .tabsWrapper{
+       width: 90%;
+       height: 50px;
+       display: flex;
+       flex-direction: row;
+       overflow: visible;
+
+   }
+
+   .runningTab{
+       width: 50px;
+       height: 50px;
+       border-radius: 50%;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       transition: margin-left 1s;
+       position: relative
+   }
+
+   .stopTab{
+       width: 50px;
+       height: 50px;
+       border-radius: 50%;
+       display: none;
+       align-items: center;
+       justify-content: center;
+       transition: margin-left 1s;
+   }
+
+   .buttonsWrapper{
+       width: 100%;
+       height: auto;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+
+   .buttonsWrapper button{
+       margin: 0px 10px;
+   }
+</style>
+
+<body>
+   <div class="wrapper">
+       <div class="childWrapper">
+           <div class="tagZero">
+               <h1>0</h1>
+           </div>
+           <div class="sliderWrapper">
+               <div class="slider" id="mainSlider"></div>
+           </div>
+           <div class="tagHundred">
+               <h1>100</h1>
+           </div>           
+       </div>
+       <div class="tabsWrapper">
+           <div class="runningTab" id="startTab">
+            0
+           </div>
+           <div class="stopTab" id="stopTab">
+            0
+           </div>
+       </div>
+    </div>
+
+    <div class="buttonsWrapper">
+        <button onclick="start()">Start</button>
+        <button onclick="stop()">Stop</button>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
