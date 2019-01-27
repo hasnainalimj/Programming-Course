@@ -1,0 +1,26 @@
+<html>
+
+<head>
+  <title>
+    Real Time Task
+  </title>
+  <link href="bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="container">
+    <input type="text" class="form-control mt-5" placeholder="Enter Anything....." id="txtInput" autofocus oninput="typing()"/>
+    <br/>
+    <h6 id="output"></h6>
+  </div>
+
+</body>
+<script>
+  function typing(){
+    let input = document.getElementById('txtInput');
+    let output = document.getElementById('output');
+    output.innerHTML = input.value;
+  }
+</script>
+
+</html>
