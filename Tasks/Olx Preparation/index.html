@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <title>
+        Home Page
+    </title>
+</head>
+
+<body>
+    <button onclick="logout()">Logout</button>
+    <br/>
+    <form onsubmit="submitAd(event)">
+        <input type="text" id="title" placeholder="Ad Title.....">
+        <br/>
+        <br/>
+        <select id="category">
+            <option value="-----Select Catagory-----">-----Select Catagory-----</option>
+            <option value="Mobiles">Mobiles</option>
+            <option value="Bikes">Bikes</option>
+            <option value="Cars">Cars</option>
+            <option value="Electronics">Electronics</option>
+            <option value="Furniture">Furniture</option>
+            <option value="Jobs">Jobs</option>
+            <option value="Animals">Animals</option>
+            <option value="Homes">Homes</option>
+            <option value="Books">Books</option>
+            <option value="Kids">Kids</option>
+            <option value="Services">Services</option>
+            <option value="Fashion">Fashion</option>
+        </select>
+
+        <textarea placeholder="Ad Description....." id="description"></textarea>
+
+        <input type="file" multiple="multiple" id="files"> <!--Return array-->
+
+        <input type="number" id="price" placeholder="Price.....">
+
+        <input type="text" id="name" value="ali" placeholder="Name....." readonly="readonly">
+
+        <input type="number" id="phone" value="1234" placeholder="Phone....." readonly="readonly">
+
+        <input type="text" id="city" value="karachi" placeholder="City....." readonly="readonly">
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+<script src="js/script.js"></script>
+
+</html>
