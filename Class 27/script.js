@@ -105,7 +105,7 @@ function Plan(name,price,months,transfers,pages,calcAnnual){
     this.months = months,
     this.transfers = transfers,
     this.pages = pages,
-    this.calculateDiscount = calcAnnual
+    this.calcAnnual = calcAnnual
 }
 
 var discount = function calculateDiscount(currentMonth,discount){
@@ -124,8 +124,8 @@ var plan2 = new Plan("Pro",10,[3,2],500,10,discount);
 var plan3 = new Plan("Ultimate",15,[1],500,10,discount);
 
 
-console.log(plan1.calculateDiscount(5,0.5));
-console.log(plan2.calculateDiscount(1,0.5));
-console.log(plan3.calculateDiscount(1,0.5));
+console.log(plan1.calcAnnual(5,0.5));
+console.log(plan2.calcAnnual(1,0.5));
+console.log(plan3.calcAnnual(1,0.5));
 
 
