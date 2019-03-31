@@ -8,8 +8,49 @@
     <title>Math Expression</title>
 </head>
 
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center
+    }
+
+    .header{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center
+    }
+
+    .mainParent {
+        width: 50%;
+        height: 250px;
+        border: 1px solid #000;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center
+    }
+</style>
+
 <body>
-   
+    <div class="header" style="background-color: green">
+        <h3 id="correctAnswers"></h3>
+        <h3 id="totalCoins"></h3>
+        <button style="display: none" id="btnHint" onclick="getHint()">HINT</button>
+    </div>
+    <h1>Math Expression Game</h1>
+    <div class="mainParent">
+        <h1 id="question"></h1>
+        <div>
+            <input type="number" placeholder="Enter Your Answer" required id="txtAns">
+            <button onclick="checkAns()">Check</button>
+        </div>
+        <h3 id="result"></h3>
+    </div>
 </body>
 <script src="app.js"></script>
 

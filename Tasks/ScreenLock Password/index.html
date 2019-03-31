@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Screen Lock (Password)</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lockWrapper {
+        width: 30%;
+        height: 400px;
+        background-color: black;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dateAndTime {
+        width: 60%;
+        height: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dateAndTime {
+        color: white;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    .mainWrapper {
+        width: 90%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btnsWrapper {
+        width: 90%;
+        height: 260px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .inputField {
+        width: 88%;
+        border-width: 0px 0px 1px 0px;
+        background-color: black;
+        color: white;
+        border-bottom: 2px solid grey;
+        outline: none;
+    }
+
+    .btnChilds {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .btns{
+        border: none;
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+        border-radius: 100%;
+        outline: none;
+    }
+</style>
+
+<body>
+    <div class="lockWrapper">
+        <div class="dateAndTime">
+            <h2 id="time" class="dateAndTime"></h2>
+            <h5 id="date" class="dateAndTime"></h5>
+        </div>
+        <div class="mainWrapper">
+            <input type="password" placeholder="Enter PIN....." class="inputField" autofocus id="txtPass">
+            <div class="btnsWrapper">
+                <div class="btnChilds">
+                    <button class="btns" onclick="getNumber(1)">1</button>
+                    <button class="btns" onclick="getNumber(2)">2</button>
+                    <button class="btns" onclick="getNumber(3)">3</button>
+                </div>
+                <div class="btnChilds">
+                    <button class="btns" onclick="getNumber(4)">4</button>
+                    <button class="btns" onclick="getNumber(5)">5</button>
+                    <button class="btns" onclick="getNumber(6)">6</button>
+                </div>
+                <div class="btnChilds">
+                    <button class="btns" onclick="getNumber(7)">7</button>
+                    <button class="btns" onclick="getNumber(8)">8</button>
+                    <button class="btns" onclick="getNumber(9)">9</button>
+                </div>
+                <div class="btnChilds">
+                    <button class="btns" onclick="clearAll()">X</button>
+                    <button class="btns" onclick="getNumber(0)">0</button>
+                    <button class="btns" onclick="done()"><i class="fas fa-check"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
