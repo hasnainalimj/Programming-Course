@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <title>
+        JS 32
+    </title>
+</head>
+<style>
+    .mainWrappper {
+        width: 100%;
+        height: 200px;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row
+    }
+
+    .childs {
+        width: 30%;
+        height: 100%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center
+    }
+</style>
+
+<body>
+    <div class="mainWrappper">
+        <div class="childs">
+            <h5>Ali</h5>
+            <input type="text" id="txtAliTypes" placeholder="Enter your message.....">
+            <button onclick="sendedByAli()">Send</button>
+        </div>
+        <div class="childs">
+            <h5>Ahmed</h5>
+            <input type="text" id="txtAhmedTypes" placeholder="Enter your message.....">
+            <button onclick="sendedByAhmed()">Send</button>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>

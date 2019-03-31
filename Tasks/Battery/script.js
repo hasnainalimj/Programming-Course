@@ -15,6 +15,7 @@ var youtubeTime = 0;
 var sms = 0;
 var callTime = 0;
 var usingTime = 0;
+
 var fbInterval;
 var youtubeInterval;
 var callInterval;
@@ -48,7 +49,7 @@ function usingFb() {
         document.getElementById('usingTime').innerHTML = "Using Facebook : " + usingTime;
         if (fbTime == 10) {
             fbTime = 0;
-            batteryLevel = batteryLevel - 5;
+            batteryLevel = batteryLevel - 30;
             batteryShowing.innerHTML = batteryLevel + "%";
         }
         if (batteryLevel <= 15) {
@@ -62,7 +63,7 @@ function usingFb() {
             sms_.style.display = "none";
             caller.style.display = "none";
         }
-    }, 1000);
+    }, 100);
 }
 
 function closeFb() {
