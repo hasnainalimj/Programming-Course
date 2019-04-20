@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <title>
+        JS 34
+    </title>
+</head>
+<style>
+
+</style>
+
+<body>
+    <form onSubmit="return checkForLastName();">
+        Please enter your last name.<br>
+        <input type="text" id="lastNameField" onfocus="checkForLastName()" onblur="checkForLastName()"><span id="error"
+            style="display: none">Must be filled</span>
+        <input type="submit" value="Submit Form">
+    </form>
+
+    <form onSubmit="checkForSelection();">
+        <select id="states">
+            <option value="" selected="selected"> SELECT A STATE</option>
+            <option value="AL">Alabama</option>
+            <option value="AK">Alaska</option>
+            <option value="AZ">Arizona</option>
+            <option value="AR">Arkansas</option>
+        </select>&nbsp;&nbsp;
+        <input type="submit" value="Submit Form">
+    </form>
+
+</body>
+<script src="script.js">
+</script>
+
+</html>
