@@ -1,0 +1,148 @@
+<html>
+
+<head>
+    <title>Dashboard</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .wrapper {
+        width: 100%;
+        height: 55px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: green;
+    }
+
+    .section {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mycard {
+        width: 350px;
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        border: 1px solid black;
+    }
+
+    .imageWrapper {
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+    }
+
+    .infoWrapper {
+        width: 250px;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .profileImage {
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+    }
+
+    .footer {
+        width: 100%;
+        height: 55px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: green;
+    }
+
+    .update{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row
+    }
+
+    .updateForm {
+        width: 30%;
+        height: auto;
+        border: 1px solid brown;
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        border: 1px solid black
+            /* justify-content: space-around; */
+    }
+
+    .upPassword {
+        width: 30%;
+        height: auto;
+        border: 1px solid brown;
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        border: 1px solid black
+    }
+</style>
+
+<body>
+    <div class="wrapper">
+        <h1>Dashboard</h1>
+        <div class="btnsWrapper">
+            <button onclick="logout()">Logout</button>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="mycard">
+            <div class="imageWrapper">
+                <img src="../assets/2.png" class="profileImage" id="profileSec" />
+            </div>
+            <div class="infoWrapper">
+                <h5 id="txtName"></h5>
+                <h5 id="txtEmail"></h5>
+                <h5 id="txtVerify"></h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <!-- <button onclick="updateProfile()">Update Profile</button> -->
+        <button onclick="verifyEmail()">Verify Email</button>
+        <button onclick="changePassByEmail()">Change Password By Email</button>
+        <button onclick="deleteUser()">Delete User</button>
+    </div>
+    <div class="update">
+        <div class="updateForm">
+            <h2>Update</h2>
+            <input type="text" id="updateName" placeholder="Name">
+            <input type="txt" id="updateImg" placeholder="Image">
+            <button id="update" onclick="updateProfile()">Update</button>
+        </div>
+
+        <div class="upPassword">
+            <h2>Change Password</h2>
+            <input type="password" id="changePassword" placeholder="Change Password">
+            <button onclick="changePass()" id="changePass" class="pass">Update</button>
+        </div>
+    </div>
+
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+<script src="index.js"></script>
+
+</html>
