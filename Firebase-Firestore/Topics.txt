@@ -31,8 +31,27 @@ Get() Specific:
 2) Then we used get() no need to use forEach cause it always get only a single document.
 
 
+
+
+
 Basic Built-in Methods:
 
 {merge : true}:
 1) You can write this in the methods of add() & set() as the second parameter.
 2) It save your old data and merge your old data with your new data and added/setted successfully.
+
+where:
+1) It accepts three arguments
+2) It uses for restrictions or validations
+3) First Argument is key name
+4) Second Argument is Conditional Operators
+5) Third Argument is matching value
+
+limit:
+1) It accepts 1 argument // must be in number.
+2) Get Limited data and always return an array.
+
+orderBy:
+1) It accepts 2 arguments.
+2) First one is key name by which you want to order.
+3) Second is the type of order. //Asc & Desc(Default)
