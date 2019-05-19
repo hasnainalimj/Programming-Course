@@ -30,9 +30,16 @@ Get() Specific:
 1) For getting specific document we need to define id of the document in the doc().
 2) Then we used get() no need to use forEach cause it always get only a single document.
 
+Update():
+1) It always updated specific document.
+2) Its accepts updated in object as a parameter.
 
+Delete():
+1) Is the method of document.
+2) It's delete only doc not the collection/subcollection.
 
-
+onSnapshot():
+1) For get data realtime.
 
 Basic Built-in Methods:
 
@@ -55,3 +62,8 @@ orderBy:
 1) It accepts 2 arguments.
 2) First one is key name by which you want to order.
 3) Second is the type of order. //Asc & Desc(Default)
+
+firebase.firestore.FieldValue.delete():
+1) It removes specific from any document
+2) Syntax : {key_name : firebase.firestore.FieldValue.delete()}
+3) It always used in update() method.
