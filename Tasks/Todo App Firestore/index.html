@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Todo App Firestore</title>
+  </head>
+
+  <body>
+    <div>
+      <input type="text" placeholder="enter item" id="txtItem" />
+      <button onclick="addItem()">Add</button>
+      <button onclick="updateItem()">Update</button>
+      <button onclick="deleteItem()">Delete</button>
+    </div>
+
+    <ol id="itemList"></ol>
+
+    <button onclick="stopListner()">stop snapshot</button>
+  </body>
+
+  <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+  <script src="index.js"></script>
+</html>
