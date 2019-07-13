@@ -41,6 +41,7 @@ Delete():
 onSnapshot():
 1) For get data realtime.
 
+
 Basic Built-in Methods:
 
 {merge : true}:

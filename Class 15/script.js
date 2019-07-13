@@ -3,29 +3,29 @@ function mySlider(width) {
     slider.style.width = width + "%";
 }
 
-// var found = false;
+var found = false;
 
-// for (var i = 0; i < 5; i++) {
-//     if (!found) {
-//         var messages = [];
-//         found = true;
-//         console.log("false",i);
-//     }
-//     else {
-//         console.log("true",i);
-//         localStorage.setItem("messages", JSON.stringify(messages));
+for (var i = 0; i < 100; i++) {
+    if (!found) {
+        var messages = [];
+        found = true;
+        console.log("false",i);
+    }
+    else {
+        console.log("true",i);
+        localStorage.setItem("messages", JSON.stringify(messages));
 
-//         var parsing = localStorage.getItem("messages");
+        var parsing = localStorage.getItem("messages");
 
-//         var mychats = JSON.parse(parsing);
-//         // var reply = prompt("Enter you message");
+        var mychats = JSON.parse(parsing);
+        // var reply = prompt("Enter you message");
 
 
-//         var reply = "a";
-//         mychats.push(reply);
-//         localStorage.setItem("messages", JSON.stringify(mychats));
-//     }
-// }
+        var reply = "a";
+        mychats.push(reply);
+        localStorage.setItem("messages", JSON.stringify(mychats));
+    }
+}
 
 // console.log(JSON.parse(localStorage.getItem("arr")));
 
