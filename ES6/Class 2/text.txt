@@ -1,0 +1,20 @@
+var container = "";
+var text = "Hello";
+
+container = `<div><h1>${text}</h1></div>`
+
+var arr = [];
+
+arr.map(function(value,index){
+	return <div><h1>{value + index}</h1></div>
+});
+
+arr.forEach(function(value,index){
+	return <div><h1>{value + index}</h1></div>
+});
+
+var arr [];
+
+arr.filter(function(val){
+	return val.id == 1;
+})
